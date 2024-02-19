@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CV-REACT-JAROD/static/css/main.10dedb49.css",
+    "main.js": "/CV-REACT-JAROD/static/js/main.b431167a.js",
+    "index.html": "/CV-REACT-JAROD/index.html",
+    "main.10dedb49.css.map": "/CV-REACT-JAROD/static/css/main.10dedb49.css.map",
+    "main.b431167a.js.map": "/CV-REACT-JAROD/static/js/main.b431167a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10dedb49.css",
+    "static/js/main.b431167a.js"
+  ]
+}
