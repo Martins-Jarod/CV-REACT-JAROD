@@ -1,0 +1,43 @@
+.skill {
+  /* Ajouter des styles pour chaque compétence */
+  display: flex;
+  justify-content: space-between; 
+  gap: 3em; 
+  align-items: center;
+  margin-bottom: var(--spacing-1);
+  font-weight: 500;
+}
+
+.skills {
+  margin-bottom: var(--spacing-4);
+}
+
+.skills h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-2); 
+}
+
+
+
+.skill__label {
+  text-align: left;
+  margin-right: var(--spacing-1);
+}
+
+.skill__rating {
+  text-align: right;
+}
+
+/* Styles pour les cercles de notation */
+.circle {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: var(--circle-color);
+}
+
+.circle--plain {
+  background: var(--circle-color-plain);
+}

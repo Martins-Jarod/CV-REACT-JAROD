@@ -1,0 +1,14 @@
+.Objectif {
+  text-align: center;
+  background-color: var(--sidebar-bg-color);
+  padding: var(--spacing-4); 
+}
+
+.Objectif__p {
+  font-weight: 500;
+  color: var(--text-color-sidebar);
+  padding: var(--spacing-3) var(--spacing-5); 
+  margin-bottom: var(--spacing-2); 
+  max-width: 900px; 
+  margin: 0 auto; 
+}

@@ -1,24 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import User from './components/User';
+import Skills from './components/Skills';
+import Interests from './components/Interests';
+import FormationsExperiences from './components/FormationsExperiences';
+import Objectif from './components/Objectif';
+import ActionButton from './components/ActionButton';
+import { Preview } from "react-html2pdf"
+
+
 
 function App() {
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Preview id={"cv-print"} class="cv-print">
+      <div className="App">
+
+        <div className="Sidebar">
+          <ActionButton />
+          <User />
+          <Skills />
+        </div>
+
+        <div className="Main">
+          <Objectif />
+          <FormationsExperiences />
+          <Interests />
+        </div>
+
+      </div>
+    </Preview>
   );
 }
 

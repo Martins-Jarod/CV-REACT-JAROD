@@ -1,0 +1,27 @@
+.cursus {
+  margin-left: 5vw;
+  margin-top: 5vh;
+}
+
+.cursus h2 {
+  border-bottom: 5px solid #ccc; 
+  padding-bottom: var(--spacing-1); 
+  margin-bottom: var(--spacing-5);
+  max-width: 70%; 
+
+}
+
+
+.cursus .experience p:nth-child(2) {
+
+  font-style: italic;
+  font-weight: bold;
+}
+
+.cursus .item {
+  margin-bottom: var(--spacing-3);
+}
+
+.cursus .experience {
+  margin-bottom: var(--spacing-3); 
+}

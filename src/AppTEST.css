@@ -22,6 +22,10 @@
   --circle-color: #c9c4c4;
   --circle-color-plain: #ffffffe8;  
 
+  /* bonus */
+
+  /* bae5ff */
+
   /* Fonts */
   --body-font: "Public Sans", "Sans-serif";
   --h1-font-size: 1.7rem;
@@ -48,93 +52,61 @@ body {
 .App {
   display: flex;
   flex-direction: row;
-  min-height: 100vh;
+  max-height: 100%; /*auteur de l'élément parent est de 100% de la hauteur de l'écran */
 }
 
 .Sidebar {
+  flex: 0.75;
   background-color: var(--sidebar-bg-color);
   color: var(--text-color-sidebar);
   padding: var(--spacing-2);
-  min-height: 100vh;  
+  max-height: 100%; /* hauteur minimale de 100% de la hauteur de l'écran */
+  
 }
 
 .Main {
   flex: 3;
-  min-height: 100vh;
+  max-height: 100%; /* hauteur minimale de 100% de la hauteur de l'écran */
+
 }
-
-
-/* les petits écrans */
 
 @media screen and (max-width: 768px) {
   .App {
-    flex-direction: column; 
+    flex-direction: column; /* Mettre en colonne sur les petits écrans */
   }
   
   .Sidebar {
-    min-width: auto; 
-    width: 100%; 
-    padding: var(--spacing-2); 
+    min-width: auto; /* Réinitialiser la largeur minimale pour la colonne latérale */
+    width: 100%; /* Utiliser toute la largeur sur les petits écrans */
+    padding: var(--spacing-2); /* Réduire l'espace intérieur */
   }
   
 }
 
 
 
-/* PDF */
+
+/* Generate PDF */
 
 #cv-print {
   width: 100% !important;
 } 
-
-.cv-print .action-button{
-  display: none;
+.cv-print ul {
+  margin:0;
+  padding:0;
+  
 }
+
 .cv-print .App {
   max-width: 210mm;
 }
-
-.cv-print .Sidebar{
-  flex: 1.25
+.cv-print .sidebar {
+  height: 297mm;
 }
-
+.cv-print .user__infos svg {
+  display: none !important;
+}
 .cv-print .circle {
   width:10px;
   height:10px;
-}
-
-.cv-print .cursus h2 {
-  margin-bottom: var(--spacing-3);
-}
-
-.cv-print .cursus h3 {
-   font-size: var(--h3-font-size);
-}
-
-.cv-print .cursus {
-  margin-left: 2vw; /* Ajouter un espace à gauche */
-  margin-top: 4vh;
-}
-
-.cv-print .interests h2 {
- 
-  margin-bottom: var(--spacing-3);
-}
-
-.cv-print .interests {
-  margin-left: 2vw; /* Ajouter un espace à gauche */
-  margin-top: 4vh;
-}
-
-
-.cv-print .interests ul {
-
-  max-width: 100%; /* Définir une largeur maximale pour la liste */
-
-}
-
-.cv-print .skill {
-  
-  gap: 0;
- 
 }

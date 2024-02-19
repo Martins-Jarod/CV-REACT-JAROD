@@ -1,0 +1,28 @@
+
+  .action-button button {
+    margin-bottom: var(--spacing-1);
+  }
+
+/* CSS pour afficher le color picker */
+.ColorPicker {
+    position: absolute;
+    display: block;
+    z-index: 999; 
+  }
+
+
+
+.pdf-button button,
+.ColorPicker button {
+  background-color: transparent; 
+  border: none; 
+  padding: 0; 
+  cursor: pointer; 
+}
+
+
+.pdf-button button svg,
+.ColorPicker button svg {
+  fill: white; 
+  font-size: 32px; 
+}
